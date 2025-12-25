@@ -1,0 +1,316 @@
+{
+  "vehicles": [
+    {
+      "year": "2024",
+      "make": "Subaru",
+      "models": [
+        {
+          "model": "WRX",
+          "subModels": ["Base", "Premium", "Limited", "GT"]
+        },
+        {
+          "model": "BRZ",
+          "subModels": ["Premium", "Limited"]
+        },
+        {
+          "model": "Impreza",
+          "subModels": ["Base", "Premium", "Sport", "Limited"]
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "make": "Subaru",
+      "models": [
+        {
+          "model": "WRX",
+          "subModels": ["Base", "Premium", "Limited", "GT"]
+        },
+        {
+          "model": "BRZ",
+          "subModels": ["Premium", "Limited"]
+        },
+        {
+          "model": "Impreza",
+          "subModels": ["Base", "Premium", "Sport", "Limited"]
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "make": "Subaru",
+      "models": [
+        {
+          "model": "WRX",
+          "subModels": ["Base", "Premium", "Limited"]
+        },
+        {
+          "model": "STI",
+          "subModels": ["Base", "Limited"]
+        },
+        {
+          "model": "BRZ",
+          "subModels": ["Premium", "Limited"]
+        }
+      ]
+    },
+    {
+      "year": "2021",
+      "make": "Subaru",
+      "models": [
+        {
+          "model": "WRX",
+          "subModels": ["Base", "Premium", "Limited"]
+        },
+        {
+          "model": "STI",
+          "subModels": ["Base", "Limited", "S209"]
+        },
+        {
+          "model": "BRZ",
+          "subModels": ["Premium", "Limited"]
+        }
+      ]
+    },
+    {
+      "year": "2020",
+      "make": "Subaru",
+      "models": [
+        {
+          "model": "WRX",
+          "subModels": ["Base", "Premium", "Limited"]
+        },
+        {
+          "model": "STI",
+          "subModels": ["Base", "Limited", "S209"]
+        }
+      ]
+    },
+    {
+      "year": "2019",
+      "make": "Subaru",
+      "models": [
+        {
+          "model": "WRX",
+          "subModels": ["Base", "Premium", "Limited"]
+        },
+        {
+          "model": "STI",
+          "subModels": ["Base", "Limited", "Type RA"]
+        }
+      ]
+    },
+    {
+      "year": "2018",
+      "make": "Subaru",
+      "models": [
+        {
+          "model": "WRX",
+          "subModels": ["Base", "Premium", "Limited"]
+        },
+        {
+          "model": "STI",
+          "subModels": ["Base", "Limited", "Type RA"]
+        }
+      ]
+    },
+    {
+      "year": "2017",
+      "make": "Subaru",
+      "models": [
+        {
+          "model": "WRX",
+          "subModels": ["Base", "Premium", "Limited"]
+        },
+        {
+          "model": "STI",
+          "subModels": ["Base", "Limited"]
+        }
+      ]
+    },
+    {
+      "year": "2016",
+      "make": "Subaru",
+      "models": [
+        {
+          "model": "WRX",
+          "subModels": ["Base", "Premium", "Limited"]
+        },
+        {
+          "model": "STI",
+          "subModels": ["Base", "Limited", "Launch Edition"]
+        }
+      ]
+    },
+    {
+      "year": "2015",
+      "make": "Subaru",
+      "models": [
+        {
+          "model": "WRX",
+          "subModels": ["Base", "Premium", "Limited"]
+        },
+        {
+          "model": "STI",
+          "subModels": ["Base", "Limited", "Launch Edition"]
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "make": "Mitsubishi",
+      "models": [
+        {
+          "model": "Eclipse Cross",
+          "subModels": ["ES", "SE", "SEL"]
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "make": "Mitsubishi",
+      "models": [
+        {
+          "model": "Eclipse Cross",
+          "subModels": ["ES", "SE", "SEL"]
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "make": "Mitsubishi",
+      "models": [
+        {
+          "model": "Eclipse Cross",
+          "subModels": ["ES", "SE", "SEL"]
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "make": "Honda",
+      "models": [
+        {
+          "model": "Civic",
+          "subModels": ["LX", "Sport", "EX", "Touring", "Type R"]
+        },
+        {
+          "model": "Accord",
+          "subModels": ["LX", "Sport", "EX-L", "Touring"]
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "make": "Honda",
+      "models": [
+        {
+          "model": "Civic",
+          "subModels": ["LX", "Sport", "EX", "Touring", "Type R"]
+        },
+        {
+          "model": "Accord",
+          "subModels": ["LX", "Sport", "EX-L", "Touring"]
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "make": "Honda",
+      "models": [
+        {
+          "model": "Civic",
+          "subModels": ["LX", "Sport", "EX", "Touring", "Si"]
+        },
+        {
+          "model": "Accord",
+          "subModels": ["LX", "Sport", "EX-L", "Touring"]
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "make": "Toyota",
+      "models": [
+        {
+          "model": "GR86",
+          "subModels": ["Base", "Premium"]
+        },
+        {
+          "model": "Supra",
+          "subModels": ["2.0", "3.0", "3.0 Premium"]
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "make": "Toyota",
+      "models": [
+        {
+          "model": "GR86",
+          "subModels": ["Base", "Premium"]
+        },
+        {
+          "model": "Supra",
+          "subModels": ["2.0", "3.0", "3.0 Premium"]
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "make": "Toyota",
+      "models": [
+        {
+          "model": "GR86",
+          "subModels": ["Base", "Premium"]
+        },
+        {
+          "model": "Supra",
+          "subModels": ["2.0", "3.0", "3.0 Premium"]
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "make": "Mazda",
+      "models": [
+        {
+          "model": "Mazda3",
+          "subModels": ["Base", "Select", "Preferred", "Premium", "Turbo"]
+        },
+        {
+          "model": "MX-5 Miata",
+          "subModels": ["Sport", "Club", "Grand Touring"]
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "make": "Mazda",
+      "models": [
+        {
+          "model": "Mazda3",
+          "subModels": ["Base", "Select", "Preferred", "Premium", "Turbo"]
+        },
+        {
+          "model": "MX-5 Miata",
+          "subModels": ["Sport", "Club", "Grand Touring"]
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "make": "Mazda",
+      "models": [
+        {
+          "model": "Mazda3",
+          "subModels": ["Base", "Select", "Preferred", "Premium", "Turbo"]
+        },
+        {
+          "model": "MX-5 Miata",
+          "subModels": ["Sport", "Club", "Grand Touring"]
+        }
+      ]
+    }
+  ]
+}

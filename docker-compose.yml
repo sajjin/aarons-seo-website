@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sajjin/aarons-seo-website:latest
+    container_name: aarons-seo-website
+    ports:
+      - "${HOST_PORT:-3000}:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+
+  cloudflare-tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflare-tunnel
+    command: tunnel run --token ${CLOUDFLARE_TUNNEL_TOKEN}
+    environment:
+      - CLOUDFLARE_TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+    networks:
+      - app-network
+    restart: unless-stopped
+    depends_on:
+      - web
+
+networks:
+  app-network:
+    driver: bridge

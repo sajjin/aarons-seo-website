@@ -20,6 +20,50 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Reusable Sections
+
+- `app/components/Header.tsx`: Site header with navigation; uses `NAVIGATION_ITEMS` from `app/data/site.ts`.
+- `app/components/HeroSection.tsx`: Landing hero with intro text.
+- `app/components/BrandsSection.tsx`: Popular brands grid; uses `BRANDS` from `app/data/site.ts`.
+- `app/components/ProjectsSection.tsx`: Projects preview; uses `PROJECTS` from `app/data/projects.ts`.
+- `app/components/ProductSection.tsx`: Generic product section with sidebar and grid.
+- `app/components/AnnouncementBanner.tsx`: Dismissible announcement bar.
+- `app/components/BackToTop.tsx`: Scroll-to-top button.
+- `app/components/Footer.tsx`: Site footer.
+
+## Shared Data
+
+- `app/data/site.ts`: Navigation items, brands, and example product/menu data.
+
+## Usage Example
+
+Import and use any section in a page:
+
+```tsx
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ProductSection from '../components/ProductSection';
+import { SUSPENSION_ITEMS, SUSPENSION_PRODUCTS } from '../data/site';
+
+export default function SomePage() {
+	return (
+		<>
+			<Header />
+			<main>
+				<ProductSection
+					title="Suspension"
+					viewMoreHref="#"
+					menuItems={SUSPENSION_ITEMS}
+					products={SUSPENSION_PRODUCTS}
+					heroImage="/assets/img/products/Fortune_Auto_Pic_450x.webp"
+				/>
+			</main>
+			<Footer />
+		</>
+	);
+}
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

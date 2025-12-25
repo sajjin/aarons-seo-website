@@ -1,0 +1,96 @@
+/* Brands Section */
+.brandsSection {
+  padding: 20px 0;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding-inline: clamp(16px, 3vw, 48px);
+  width: 100%;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.textLink {
+  color: #00afff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.textLink:hover {
+  color: #00afff;
+}
+
+.logoList {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: clamp(12px, 1.2vw, 24px);
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding-inline: clamp(16px, 3vw, 48px);
+  width: 100%;
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.logoLink:hover {
+  transform: scale(1.05);
+}
+
+.logoImage {
+  width: 100%;
+  height: auto;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+  .logoList {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .sectionHeader {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .logoList {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+}

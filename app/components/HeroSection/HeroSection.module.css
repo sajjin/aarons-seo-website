@@ -1,0 +1,154 @@
+/* Hero Section */
+.heroSection {
+  width: 100%;
+  position: relative;
+}
+
+.containerFluid {
+  width: 100%;
+  padding: 0;
+}
+
+.hero {
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.heroImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heroImageWrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #23242880;
+  z-index: 1;
+}
+
+.heroImage {
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Hero carousel layering */
+.heroImageWrapper { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.heroImage, 
+.heroImageActive, 
+.heroImageInactive {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease, transform 6s linear;
+}
+
+.heroImageInactive { 
+  opacity: 0; 
+}
+
+.heroImageActive { 
+  opacity: 1; 
+}
+
+/* Optional subtle slow zoom on active image */
+.heroImageActive { 
+  transform: scale(1.04); 
+}
+
+.heroImageInactive { 
+  transform: scale(1.02); 
+}
+
+.heroDots {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+
+.heroDot, 
+.heroDotActive {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #ffffffb3;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color .3s, transform .3s;
+}
+
+.heroDotActive { 
+  background: #00afff; 
+  transform: scale(1.15); 
+  border-color: #00afff; 
+}
+
+.heroDot:hover { 
+  background: #ffffff80; 
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  max-width: 400px;
+  margin-right: 350px;
+  color: white;
+}
+
+.megaTitleMedium {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  color: #fff;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.description p {
+  margin: 0 0 15px 0;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .megaTitleMedium { 
+    font-size: 24px; 
+  }
+  
+  .heroContent { 
+    margin-right: 0; 
+    max-width: 100%; 
+    padding: 20px 15px; 
+  }
+}

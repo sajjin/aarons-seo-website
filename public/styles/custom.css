@@ -1,0 +1,77 @@
+.marketting-banner-content h2.title{background-color:#000000;}
+
+
+
+
+@media (max-width: 425px){
+    .hero.hero--medium .hero-image {
+          height: 158px !important;
+    }
+    .section-header .text-link{
+        position: relative !important;
+    }
+    .section-header{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.halo-header-PC .header-middle .header-middle-text .navUser-action:hover.custom .navUser-text-wrapper .navUser-action:hover,
+.header-middle .header-middle-text .navUser-action:hover.custom .navUser-text-wrapper .navUser-action:hover{
+    color: #00afff;
+}
+
+.halo-header-PC .header-middle .header-middle-text .navUser-action:hover.custom .navUser-text-wrapper .navUser-action,
+.header-middle .header-middle-text .navUser-action:hover.custom .navUser-text-wrapper .navUser-action{
+    color: #ffffff;
+}
+
+@media (min-width: 1025px){
+  .shopify-section .halo-header-02 .header-bottom > .container .site-nav {
+      padding-right: 0px;
+      white-space: nowrap;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1100px){
+  .shopify-section .halo-header-02 .header-bottom > .container .site-nav .menu-lv-1 {
+      margin-right: 13px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px){
+  .shopify-section .halo-header-02 .header-bottom > .container .site-nav .menu-lv-1 {
+      margin-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1250px){
+  .shopify-section .halo-header-02 .header-bottom > .container .site-nav .menu-lv-1 {
+      margin-right: 30px;
+  }
+}
+
+.product-single__photos ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.product-single__photos ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.product-single__photos ::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.product-single__photos ::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@media only screen and (min-width: 1025px){
+  body .product_top.product_layout_1 .product-slider .slider-nav:not(.slick-slider), .product_top.product_layout_1 .product-slider .slider-nav {
+      overflow: auto;
+  }
+}

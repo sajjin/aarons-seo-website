@@ -1,0 +1,290 @@
+[
+  {
+    "id": "2006-subaru-baja",
+    "title": "Aaron's 2006 Baja",
+    "subtitle": "The Ultimate Street Truck Build",
+    "heroImage": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_1_720x_f20db892-6dac-426f-86f3-d128196c6342.webp",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Project Overview",
+        "text": "This 2006 Subaru Baja represents a unique blend of practicality and performance. Built from the ground up with premium components, this street truck pushes the boundaries of what's possible with the Baja platform.",
+        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_1_720x_f20db892-6dac-426f-86f3-d128196c6342.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "performance",
+        "heading": "Performance Upgrades",
+        "text": "Equipped with a fully built engine featuring forged internals, upgraded turbocharger, and a custom exhaust system. This Baja delivers incredible power while maintaining street drivability. The suspension has been completely overhauled with coilovers and upgraded bushings throughout.",
+        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_1_720x_f20db892-6dac-426f-86f3-d128196c6342.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "exterior",
+        "heading": "Exterior Modifications",
+        "text": "The exterior showcases a carefully curated selection of aftermarket parts including custom wheels, aggressive stance, and unique body modifications that set this Baja apart from any other on the road.",
+        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_1_720x_f20db892-6dac-426f-86f3-d128196c6342.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "engine": "EJ25 Turbocharged",
+      "horsepower": "350+ HP",
+      "drivetrain": "AWD",
+      "suspension": "Custom Coilovers"
+    },
+    "link": "https://boostbarnmotorsports.com/blogs/news/aarons-2006-baja"
+  },
+  {
+    "id": "2007-subaru-sti",
+    "title": "Gurj's 2007 STI",
+    "subtitle": "Track-Ready Performance Machine",
+    "heroImage": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Build Philosophy",
+        "text": "This 2007 STI was built with one goal in mind: dominate on the track. Every modification serves a purpose, from the aerodynamics to the engine internals. This is a no-compromise performance build.",
+        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "engine",
+        "heading": "Engine & Drivetrain",
+        "text": "The heart of this STI features a fully built EJ257 with upgraded pistons, rods, and head studs. A larger turbocharger and supporting mods push this platform well beyond factory specs while maintaining reliability.",
+        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "track",
+        "heading": "Track Performance",
+        "text": "With upgraded brakes, track-focused suspension geometry, and lightweight wheels wrapped in sticky tires, this STI is equally at home on the street or setting lap times at the track.",
+        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
+        "layout": "image-right"
+      }
+    ],
+    "specs": {
+      "engine": "Built EJ257",
+      "horsepower": "450+ HP",
+      "drivetrain": "AWD",
+      "brakes": "6-Piston Front / 4-Piston Rear"
+    },
+    "link": "https://boostbarnmotorsports.com/blogs/news/gurjs-2007-sti"
+  },
+  {
+    "id": "2006-subaru-sti-richard",
+    "title": "Richard's 2006 STI",
+    "subtitle": "Balanced Street & Show Build",
+    "heroImage": "/assets/img/48416946_10156665674335210_5043945120668319744_o_720x_a32bc312-343d-42f4-a314-f6049699ce1b.webp",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "The Perfect Balance",
+        "text": "Richard's 2006 STI strikes the perfect balance between show-quality aesthetics and real-world performance. This build proves you don't have to sacrifice looks for speed.",
+        "image": "/assets/img/48416946_10156665674335210_5043945120668319744_o_720x_a32bc312-343d-42f4-a314-f6049699ce1b.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "styling",
+        "heading": "Aesthetic Excellence",
+        "text": "From the custom paint to the meticulously detailed engine bay, every aspect of this STI has been refined. Premium wheels, aggressive fitment, and tasteful exterior mods create a cohesive and stunning package.",
+        "image": "/assets/img/48416946_10156665674335210_5043945120668319744_o_720x_a32bc312-343d-42f4-a314-f6049699ce1b.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "performance",
+        "heading": "Performance Meets Style",
+        "text": "Beneath the beautiful exterior lies serious performance upgrades including engine management, exhaust, and suspension work that allows this STI to perform as good as it looks.",
+        "image": "/assets/img/48416946_10156665674335210_5043945120668319744_o_720x_a32bc312-343d-42f4-a314-f6049699ce1b.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "engine": "Modified EJ257",
+      "horsepower": "375+ HP",
+      "drivetrain": "AWD",
+      "wheels": "Custom 18x9.5"
+    },
+    "link": "https://boostbarnmotorsports.com/blogs/news/richards-2006-sti"
+  },
+  {
+    "id": "2004-drift-car",
+    "title": "Aaron's 2004 Impreza Drift Car",
+    "subtitle": "Purpose-Built Drift Machine",
+    "heroImage": "/assets/img/Drift_Car6.webp",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Built to Slide",
+        "text": "This 2004 Impreza has been transformed into a dedicated drift weapon. Every component has been chosen and installed with sideways action in mind, creating a car that's as fun to drive as it is to watch.",
+        "image": "/assets/img/Drift_Car6.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "setup",
+        "heading": "Drift Setup",
+        "text": "Featuring a welded differential, angle kit, and hydraulic handbrake, this Impreza is equipped with all the essentials for serious drift work. The suspension is dialed in for maximum angle and control.",
+        "image": "/assets/img/Drift_Car6.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "power",
+        "heading": "Power Delivery",
+        "text": "The turbocharged engine has been tuned for responsive power delivery that's perfect for initiating and holding drifts. Upgraded cooling ensures consistent performance during extended sessions.",
+        "image": "/assets/img/Drift_Car6.webp",
+        "layout": "image-right"
+      }
+    ],
+    "specs": {
+      "engine": "Turbocharged EJ",
+      "horsepower": "300+ HP",
+      "drivetrain": "RWD Converted",
+      "differential": "Welded"
+    },
+    "link": "https://boost-barn.myshopify.com/blogs/news/aarons-drift-car"
+  },
+  {
+    "id": "2013-subaru-sti",
+    "title": "Chris' 2013 STI",
+    "subtitle": "Modern Performance Platform",
+    "heroImage": "/assets/img/Chris_5.webp",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Next Generation Build",
+        "text": "Chris's 2013 STI represents the evolution of Subaru performance. With modern technology and classic STI heritage, this build showcases what's possible with the newer generation platform.",
+        "image": "/assets/img/Chris_5.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "upgrades",
+        "heading": "Comprehensive Upgrades",
+        "text": "This STI features a complete suite of bolt-on and internal modifications. From the intake to the exhaust, every system has been optimized for maximum performance and efficiency.",
+        "image": "/assets/img/Chris_5.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "daily",
+        "heading": "Daily Driven Performance",
+        "text": "Despite the serious modifications, this STI remains a practical daily driver. Comfort hasn't been sacrificed, proving that performance and practicality can coexist.",
+        "image": "/assets/img/Chris_5.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "engine": "EJ257 Modified",
+      "horsepower": "400+ HP",
+      "drivetrain": "AWD",
+      "transmission": "6-Speed Manual"
+    },
+    "link": "https://boost-barn.myshopify.com/blogs/news/chris-2013-sti"
+  },
+  {
+    "id": "2019-widebody-sti",
+    "title": "Rene's 2019 STI",
+    "subtitle": "Aggressive Widebody Street Beast",
+    "heroImage": "/assets/img/image1.webp",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Widebody Transformation",
+        "text": "Rene's 2019 STI features an aggressive widebody kit that transforms the car's presence on the road. This isn't just about looks - the wider stance allows for larger wheels and tires, improving both grip and aesthetics.",
+        "image": "/assets/img/image1.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "exterior",
+        "heading": "Head-Turning Design",
+        "text": "Every angle of this STI commands attention. The widebody kit is complemented by custom aero, unique lighting, and a show-quality paint finish that makes this one of the most recognizable STIs on the street.",
+        "image": "/assets/img/image1.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "performance",
+        "heading": "Performance to Match",
+        "text": "The performance upgrades match the aggressive exterior. Engine modifications, upgraded turbocharger, and supporting mods ensure this STI has the power to back up its bold looks.",
+        "image": "/assets/img/image1.webp",
+        "layout": "image-right"
+      }
+    ],
+    "specs": {
+      "engine": "FA20DIT Modified",
+      "horsepower": "425+ HP",
+      "drivetrain": "AWD",
+      "bodykit": "Custom Widebody"
+    },
+    "link": "https://boostbarnmotorsports.com/blogs/news/renes-2019-widebody-sti"
+  },
+  {
+    "id": "Kevin-2008-STI",
+    "title": "Kevin's 2008 STI",
+    "subtitle": "Latest Generation Performance",
+    "heroImage": "/assets/img/kevins-sub.webp",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "State of the Art",
+        "text": "This 2020 STI represents the pinnacle of modern Subaru performance. Starting with the latest platform, this build incorporates cutting-edge modifications and technology.",
+        "image": "/assets/img/kevins-sub.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "tech",
+        "heading": "Technology Integration",
+        "text": "Modern engine management, data logging, and tuning capabilities allow this STI to extract maximum performance while maintaining reliability and drivability.",
+        "image": "/assets/img/kevins-sub.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "complete",
+        "heading": "Complete Package",
+        "text": "From suspension to brakes, exhaust to intake, every system has been thoughtfully upgraded to create a cohesive and impressive performance package.",
+        "image": "/assets/img/kevins-sub.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "engine": "FA20DIT Enhanced",
+      "horsepower": "380+ HP",
+      "drivetrain": "AWD",
+      "year": "2020"
+    },
+    "link": "https://boostbarnmotorsports.com/blogs/news/kevins-2008-sti"
+  },
+  {
+    "id": "Erfan-2001-JDM-STI",
+    "title": "Erfan's 2001 JDM STI",
+    "subtitle": "Latest Generation Performance",
+    "heroImage": "/assets/img/Erfan2_770x500.webp",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "State of the Art",
+        "text": "This 2020 STI represents the pinnacle of modern Subaru performance. Starting with the latest platform, this build incorporates cutting-edge modifications and technology.",
+        "image": "/assets/img/Erfan2_770x500.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "tech",
+        "heading": "Technology Integration",
+        "text": "Modern engine management, data logging, and tuning capabilities allow this STI to extract maximum performance while maintaining reliability and drivability.",
+        "image": "/assets/img/Erfan2_770x500.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "complete",
+        "heading": "Complete Package",
+        "text": "From suspension to brakes, exhaust to intake, every system has been thoughtfully upgraded to create a cohesive and impressive performance package.",
+        "image": "/assets/img/Erfan2_770x500.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "engine": "FA20DIT Enhanced",
+      "horsepower": "380+ HP",
+      "drivetrain": "AWD",
+      "year": "2020"
+    },
+    "link": "https://boostbarnmotorsports.com/blogs/news/erfans-2001-jdm-sti"
+  }
+]
