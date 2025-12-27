@@ -2,36 +2,36 @@
   {
     "id": "2006-subaru-baja",
     "title": "Aaron's 2006 Baja",
-    "subtitle": "The Ultimate Street Truck Build",
-    "heroImage": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_1_720x_f20db892-6dac-426f-86f3-d128196c6342.webp",
+    "subtitle": "The Ultimate Drag and Drive Car",
+    "heroImage": "/assets/img/projects/baja/baja-hero.webp",
     "sections": [
       {
         "id": "overview",
         "heading": "Project Overview",
-        "text": "This 2006 Subaru Baja represents a unique blend of practicality and performance. Built from the ground up with premium components, this street truck pushes the boundaries of what's possible with the Baja platform.",
-        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_1_720x_f20db892-6dac-426f-86f3-d128196c6342.webp",
+        "text": "This 2006 Subaru Baja was purpose-built with one goal in mind: competing in Drag and Drive events. The Baja platform is a rare and unconventional starting point, yet it offers a practical truck bed ideal for hauling tools and spare parts during the long road segments. Retaining the rear seats was a deliberate choice, allowing space for additional pit crew members—meaning more help when it counts and more fun along the way.",
+        "image": "/assets/img/projects/baja/baja-first.webp",
         "layout": "image-left"
       },
       {
         "id": "performance",
         "heading": "Performance Upgrades",
-        "text": "Equipped with a fully built engine featuring forged internals, upgraded turbocharger, and a custom exhaust system. This Baja delivers incredible power while maintaining street drivability. The suspension has been completely overhauled with coilovers and upgraded bushings throughout.",
-        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_1_720x_f20db892-6dac-426f-86f3-d128196c6342.webp",
+        "text": "The engine is built around a 2.35L destroked short block, sleeved and secured with 1/2-inch head studs, and fitted with GSC 282 camshafts. This setup is capable of handling over 40 psi of boost from an S366 turbocharger, supplemented by a 100-horsepower shot of nitrous, producing approximately 800 horsepower on a Mustang dyno. Airflow is managed through a shaved 2.5 intake manifold and an air-to-water intercooler with an ice box, keeping intake temperatures under control for hard quarter-mile passes. For improved access and faster servicing, the radiator was relocated to the truck bed.",
+        "image": "/assets/img/projects/baja/baja-performance.webp",
         "layout": "image-right"
       },
       {
-        "id": "exterior",
-        "heading": "Exterior Modifications",
-        "text": "The exterior showcases a carefully curated selection of aftermarket parts including custom wheels, aggressive stance, and unique body modifications that set this Baja apart from any other on the road.",
-        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_1_720x_f20db892-6dac-426f-86f3-d128196c6342.webp",
+        "id": "drivetrain",
+        "heading": "Drivetrain Features",
+        "text": "All of that power is sent to the pavement through a bone-stock STI six-speed transmission. While a few output shafts have met their limits, the rest of the drivetrain has proven virtually bulletproof, featuring a custom 3-inch steel driveshaft, 1,000-horsepower-rated DSS rear axles, and hubs machined from aerospace-grade materials. The factory R180 rear differential continues to hold strong, with shock loads ultimately transferred to the ground through Hoosier DR2 drag radial tires.",
+        "image": "/assets/img/projects/baja/baja-cage.webp",
         "layout": "image-left"
       }
     ],
     "specs": {
-      "engine": "EJ25 Turbocharged",
-      "horsepower": "350+ HP",
+      "engine": "Ej235 De-Stroked ",
+      "horsepower": "800+ HP",
       "drivetrain": "AWD",
-      "suspension": "Custom Coilovers"
+      "Purpose": "Drag and Drive"
     },
     "link": "https://boostbarnmotorsports.com/blogs/news/aarons-2006-baja"
   },
@@ -39,20 +39,20 @@
     "id": "2007-subaru-sti",
     "title": "Gurj's 2007 STI",
     "subtitle": "Track-Ready Performance Machine",
-    "heroImage": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
+    "heroImage": "/assets/img/projects/gurjs-07-sti/sti-hero.webp",
     "sections": [
       {
         "id": "overview",
         "heading": "Build Philosophy",
         "text": "This 2007 STI was built with one goal in mind: dominate on the track. Every modification serves a purpose, from the aerodynamics to the engine internals. This is a no-compromise performance build.",
-        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
+        "image": "/assets/img/projects/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
         "layout": "image-right"
       },
       {
         "id": "engine",
         "heading": "Engine & Drivetrain",
         "text": "The heart of this STI features a fully built EJ257 with upgraded pistons, rods, and head studs. A larger turbocharger and supporting mods push this platform well beyond factory specs while maintaining reliability.",
-        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
+        "image": "/assets/img/projects/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
         "layout": "image-left"
       },
       {

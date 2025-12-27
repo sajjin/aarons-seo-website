@@ -176,29 +176,25 @@ export const BRANDS: Brand[] = [
 
 export const SUSPENSION_PRODUCTS = [
   {
-    name: 'Air Suspension Kits',
-    brand: 'Suspension',
+    name: 'Hoodie',
     image: '/assets/img/suspension-placeholder.jpg',
     price: '$2,499.00',
     href: '#',
   },
   {
-    name: 'Coilovers',
-    brand: 'Suspension',
+    name: 'Science World Hoodie',
     image: '/assets/img/suspension-placeholder.jpg',
     price: '$1,299.00',
     href: '#',
   },
   {
-    name: 'Strut Bars',
-    brand: 'Suspension',
+    name: 'Japanese Tee Shirt',
     image: '/assets/img/suspension-placeholder.jpg',
     price: '$199.00',
     href: '#',
   },
   {
-    name: 'Sway Bars',
-    brand: 'Suspension',
+    name: 'Flat Brim Hat',
     image: '/assets/img/suspension-placeholder.jpg',
     price: '$299.00',
     href: '#',
@@ -206,14 +202,12 @@ export const SUSPENSION_PRODUCTS = [
 ];
 
 export const SUSPENSION_ITEMS = [
-  { title: 'Coilovers', href: '#' },
-  { title: 'Lowering Springs', href: '#' },
-  { title: 'Strut Bars', href: '#' },
-  { title: 'Air Suspension Kits', href: '#' },
-  { title: 'Sway Bars', href: '#' },
-  { title: 'Bushing Kits', href: '#' },
-  { title: 'Control Arms', href: '#' },
-  { title: 'Chassis Bracing', href: '#' },
+  { title: 'Hoodies', href: '#' },
+  { title: 'Zip Up', href: '#' },
+  { title: 'Tee Shirts', href: '#' },
+  { title: 'Shorts', href: '#' },
+  { title: 'Hats', href: '#' },
+  { title: 'Toques', href: '#' },
 ];
 
 export type { Project };

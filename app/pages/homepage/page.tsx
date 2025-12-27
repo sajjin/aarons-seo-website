@@ -18,20 +18,20 @@ export default function Home() {
       <main className={styles.mainContent}>
         <HeroSection />
         <BrandsSection />
+        <ProjectsSection />
         <ProductSection
           title="Merch"
           viewMoreHref="#"
           menuItems={SUSPENSION_ITEMS}
           products={SUSPENSION_PRODUCTS}
-          heroImage="/assets/img/products/Fortune_Auto_Pic_450x.webp"
-          heroImageAlt="Suspension Showcase"
-          sectionId="suspension"
+          heroImage="/assets/img/Product-hero-image.jpeg"
+          heroImageAlt="Merch Showcase"
+          sectionId="merch"
         />
-  
+        <Footer />
+        <BackToTop />
       </main>
-      <ProjectsSection />
-      <Footer />
-      <BackToTop />
+
     </>
   );
 }

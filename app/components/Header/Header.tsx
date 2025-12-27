@@ -236,7 +236,7 @@ export default function Header() {
               <Image
                 src="/assets/img/copperplate_boost_barn_logo_invert_d74dc39f-e366-4024-b52a-01172915ecfa.webp"
                 alt="Boost Barn"
-                width={200}
+                width={250}
                 height={60}
                 className={styles.siteHeaderLogo}
                 onClick={() => (window.location.href = '/')}
@@ -245,6 +245,21 @@ export default function Header() {
             </div>
 
             <div className={styles.headerMiddleText}>
+              <div className={styles.itemCart}>
+                <Link href="https://boostbarnmotorsports.com/collections/all" className={styles.navUserActionCustom}>
+                  <span className={styles.cartWrapper}>
+                    <svg width="45" height="45" viewBox="0 0 1024 1024" fill="white" aria-hidden="true" style={{ display: 'block' }}>
+                      <path d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM409.6 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"/>
+                      <path d="M768 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM768 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"/>
+                      <path d="M898.021 228.688c-12.859-15.181-32.258-23.888-53.221-23.888h-626.846l-5.085-30.506c-6.72-40.315-43.998-71.894-84.869-71.894h-51.2c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6h51.2c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395c6.718 40.314 43.997 71.893 84.867 71.893h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zM862.331 276.694l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z"/>
+                    </svg>
+                  </span>
+                  <span className={styles.cartText}>Shop Now</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* <div className={styles.headerMiddleText}>
               <div className={styles.itemQuickSearch}>
                 <form action="https://boostbarnmotorsports.com/search" method="get" className={styles.searchBar} role="search">
                   <input type="hidden" name="type" value="product" />
@@ -263,7 +278,7 @@ export default function Header() {
                   </button>
                 </form>
               </div>
-            </div>
+            </div> */}
 
             <div className={styles.userActions}>
               <div className={styles.itemAccount}>
@@ -283,19 +298,6 @@ export default function Header() {
                 </div>
               </div>
 
-              <div className={styles.itemCart}>
-                <Link href="https://boostbarnmotorsports.com/cart" className={styles.navUserActionCustom}>
-                  <span className={styles.cartWrapper}>
-                    <svg width="26" height="26" viewBox="0 0 1024 1024" fill="white" aria-hidden="true" style={{ display: 'block' }}>
-                      <path d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM409.6 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"/>
-                      <path d="M768 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM768 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"/>
-                      <path d="M898.021 228.688c-12.859-15.181-32.258-23.888-53.221-23.888h-626.846l-5.085-30.506c-6.72-40.315-43.998-71.894-84.869-71.894h-51.2c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6h51.2c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395c6.718 40.314 43.997 71.893 84.867 71.893h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zM862.331 276.694l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z"/>
-                    </svg>
-                    <span className={styles.countPill}>0</span>
-                  </span>
-                  <span className={styles.cartText}>MY CART</span>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -466,7 +468,7 @@ export default function Header() {
             />
           </div>
 
-          <div className={styles.scrolledSearch}>
+          {/* <div className={styles.scrolledSearch}>
             <form action="https://boostbarnmotorsports.com/search" method="get" className={styles.searchBar} role="search">
               <input type="hidden" name="type" value="product" />
               <input
@@ -483,7 +485,22 @@ export default function Header() {
                 </svg>
               </button>
             </form>
-          </div>
+          </div> */}
+
+            <div className={styles.headerMiddleText}>
+              <div className={styles.itemCart}>
+                <Link href="https://boostbarnmotorsports.com/collections/all" className={styles.navUserActionCustom}>
+                  <span className={styles.cartWrapper}>
+                    <svg width="35" height="35" viewBox="0 0 1024 1024" fill="white" aria-hidden="true" style={{ display: 'block' }}>
+                      <path d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM409.6 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"/>
+                      <path d="M768 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM768 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"/>
+                      <path d="M898.021 228.688c-12.859-15.181-32.258-23.888-53.221-23.888h-626.846l-5.085-30.506c-6.72-40.315-43.998-71.894-84.869-71.894h-51.2c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6h51.2c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395c6.718 40.314 43.997 71.893 84.867 71.893h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zM862.331 276.694l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z"/>
+                    </svg>
+                  </span>
+                  <span className={styles.cartText}>Shop Now</span>
+                </Link>
+              </div>
+            </div>
 
           <div className={styles.scrolledActions}>
             <button className={styles.mobileSearchButton} onClick={() => setMobileSearchOpen(!mobileSearchOpen)} aria-label="Toggle search">
@@ -515,7 +532,7 @@ export default function Header() {
               </div>
             </div>
 
-            <div className={`${styles.itemCart} ${styles.desktopOnly}`}>
+            {/* <div className={`${styles.itemCart} ${styles.desktopOnly}`}>
               <Link href="https://boostbarnmotorsports.com/cart" className={styles.navUserActionCustom}>
                 <span className={styles.cartWrapper}>
                   <span className={styles.countPill}>0</span>
@@ -527,7 +544,7 @@ export default function Header() {
                 </span>
                 <span className={styles.navUserTextWrapper}>My Cart</span>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 

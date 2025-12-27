@@ -925,7 +925,6 @@ body.menuOpen .mainContent::before {
   }
 
   .sectionHeader { flex-direction: column; align-items: flex-start; gap: 10px; }
-  .headerMiddleText { flex: 0; justify-content: flex-end; }
   .itemQuickSearch { display: none; }
   .itemAccount { margin: 0 10px; }
   .itemCart { display: none !important; }

@@ -8,7 +8,6 @@ export interface ProductSectionProps {
   menuItems: Array<{ title: string; href: string }>;
   products: Array<{
     name: string;
-    brand: string;
     image: string;
     price: string;
     originalPrice?: string;
@@ -26,9 +25,6 @@ export default function ProductSection({ title, viewMoreHref, menuItems, product
       <div className={styles.productSectionContainer}>
         <div className={styles.productSectionHeader}>
           <h2>{title}</h2>
-          <Link href={viewMoreHref} className={styles.textLink}>
-            View More
-          </Link>
         </div>
         <div className={`${styles.productSectionContent} ${heroImage ? styles.hasFeatureImage : ''}`}>
           <aside className={styles.productSidebar} aria-label={`${title} subcategories`}>
@@ -64,7 +60,6 @@ export default function ProductSection({ title, viewMoreHref, menuItems, product
                     <Image src={product.image} alt={product.name} width={300} height={300} className={styles.productImage} />
                   </div>
                   <div className={styles.productInfo}>
-                    <p className={styles.productBrand}>{product.brand}</p>
                     <h3 className={styles.productName}>{product.name}</h3>
                     <div className={styles.productPricing}>
                       {product.originalPrice && <span className={styles.originalPrice}>{product.originalPrice}</span>}
