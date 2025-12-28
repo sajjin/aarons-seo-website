@@ -6,7 +6,7 @@ import Link from 'next/link';
 import styles from '../../pages/homepage/page.module.css';
 // import styles from './Header.module.css';
 import { NAVIGATION_ITEMS } from '../../data/site';
-// import vehicleData from '../data/vehicles.json';
+import vehicleData from '../../data/vehicles.json';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,10 +18,10 @@ export default function Header() {
   const [isClosingSubmenu, setIsClosingSubmenu] = useState(false);
 
   // Vehicle selector state
-  // const [selectedYear, setSelectedYear] = useState<string>('');
-  // const [selectedMake, setSelectedMake] = useState<string>('');
-  // const [selectedModel, setSelectedModel] = useState<string>('');
-  // const [selectedSubModel, setSelectedSubModel] = useState<string>('');
+  const [selectedYear, setSelectedYear] = useState<string>('');
+  const [selectedMake, setSelectedMake] = useState<string>('');
+  const [selectedModel, setSelectedModel] = useState<string>('');
+  const [selectedSubModel, setSelectedSubModel] = useState<string>('');
 
   const headerRef = useRef<HTMLElement | null>(null);
 
@@ -115,72 +115,89 @@ export default function Header() {
     }
   };
 
-  // // Get unique years from vehicle data
-  // const years = Array.from(new Set(vehicleData.vehicles.map(v => v.year))).sort((a, b) => parseInt(b) - parseInt(a));
+  // Get unique years from vehicle data
+  const years = Array.from(new Set(vehicleData.vehicles.map(v => v.year))).sort((a, b) => parseInt(b) - parseInt(a));
 
-  // // Get makes for selected year
-  // const makes = selectedYear 
-  //   ? Array.from(new Set(vehicleData.vehicles.filter(v => v.year === selectedYear).map(v => v.make))).sort()
-  //   : [];
+  // Get makes for selected year
+  const makes = selectedYear 
+    ? Array.from(new Set(vehicleData.vehicles.filter(v => v.year === selectedYear).map(v => v.make))).sort()
+    : [];
 
-  // // Get models for selected year and make
-  // const models = selectedYear && selectedMake
-  //   ? vehicleData.vehicles
-  //       .filter(v => v.year === selectedYear && v.make === selectedMake)
-  //       .flatMap(v => v.models.map(m => m.model))
-  //   : [];
+  // Get models for selected year and make
+  const models = selectedYear && selectedMake
+    ? vehicleData.vehicles
+        .filter(v => v.year === selectedYear && v.make === selectedMake)
+        .flatMap(v => v.models.map(m => m.model))
+    : [];
 
-  // // Get sub-models for selected year, make, and model
-  // const subModels = selectedYear && selectedMake && selectedModel
-  //   ? vehicleData.vehicles
-  //       .filter(v => v.year === selectedYear && v.make === selectedMake)
-  //       .flatMap(v => v.models.filter(m => m.model === selectedModel))
-  //       .flatMap(m => m.subModels)
-  //   : [];
+  // Get sub-models for selected year, make, and model
+  const subModels = selectedYear && selectedMake && selectedModel
+    ? vehicleData.vehicles
+        .filter(v => v.year === selectedYear && v.make === selectedMake)
+        .flatMap(v => v.models.filter(m => m.model === selectedModel))
+        .flatMap(m => m.subModels)
+    : [];
 
-  // // Reset dependent dropdowns when parent changes
-  // const handleYearChange = (year: string) => {
-  //   setSelectedYear(year);
-  //   setSelectedMake('');
-  //   setSelectedModel('');
-  //   setSelectedSubModel('');
-  // };
+  // Reset dependent dropdowns when parent changes
+  const handleYearChange = (year: string) => {
+    setSelectedYear(year);
+    setSelectedMake('');
+    setSelectedModel('');
+    setSelectedSubModel('');
+  };
 
-  // const handleMakeChange = (make: string) => {
-  //   setSelectedMake(make);
-  //   setSelectedModel('');
-  //   setSelectedSubModel('');
-  // };
+  const handleMakeChange = (make: string) => {
+    setSelectedMake(make);
+    setSelectedModel('');
+    setSelectedSubModel('');
+  };
 
-  // const handleModelChange = (model: string) => {
-  //   setSelectedModel(model);
-  //   setSelectedSubModel('');
-  // };
+  const handleModelChange = (model: string) => {
+    setSelectedModel(model);
+    setSelectedSubModel('');
+  };
 
-  // const handleSearch = () => {
-  //   if (!selectedYear || !selectedMake || !selectedModel) {
-  //     return;
-  //   }
+  // Try to read the current text query from any search input on the page
+  const getCurrentSearchQuery = (): string => {
+    if (typeof document === 'undefined') return '';
+    const inputs = document.querySelectorAll('input[name="q"]');
+    for (const input of Array.from(inputs)) {
+      const val = (input as HTMLInputElement).value?.trim();
+      if (val) return val;
+    }
+    return '';
+  };
+
+  const handleSearch = () => {
+    if (!selectedYear || !selectedMake || !selectedModel) {
+      return;
+    }
     
-  //   // Build the URL path: year-make-model-submodel (all lowercase with hyphens)
-  //   let urlPath = `${selectedYear}-${selectedMake}-${selectedModel}`;
-  //   if (selectedSubModel) {
-  //     urlPath += `-${selectedSubModel}`;
-  //   }
-    
-  //   // Convert to lowercase and replace spaces with hyphens
-  //   urlPath = urlPath.toLowerCase().replace(/\s+/g, '-');
-    
-  //   // Navigate to the URL
-  //   window.location.href = `https://boostbarnmotorsports.com/collections/all/${urlPath}`;
-  // };
+    // Build search URL with vehicle parameters
+    const params = new URLSearchParams();
+    params.append('year', selectedYear);
+    params.append('make', selectedMake);
+    params.append('model', selectedModel);
+    if (selectedSubModel) {
+      params.append('submodel', selectedSubModel);
+    }
 
-  // const handleClear = () => {
-  //   setSelectedYear('');
-  //   setSelectedMake('');
-  //   setSelectedModel('');
-  //   setSelectedSubModel('');
-  // };
+    // Include text query if present
+    const q = getCurrentSearchQuery();
+    if (q) {
+      params.append('q', q);
+    }
+    
+    // Navigate to local search page
+    window.location.href = `/search?${params.toString()}`;
+  };
+
+  const handleClear = () => {
+    setSelectedYear('');
+    setSelectedMake('');
+    setSelectedModel('');
+    setSelectedSubModel('');
+  };
 
   return (
     <header
@@ -236,7 +253,7 @@ export default function Header() {
               <Image
                 src="/assets/img/copperplate_boost_barn_logo_invert_d74dc39f-e366-4024-b52a-01172915ecfa.webp"
                 alt="Boost Barn"
-                width={250}
+                width={200}
                 height={60}
                 className={styles.siteHeaderLogo}
                 onClick={() => (window.location.href = '/')}
@@ -244,7 +261,7 @@ export default function Header() {
               />
             </div>
 
-            <div className={styles.headerMiddleText}>
+            {/* <div className={styles.headerMiddleText}>
               <div className={styles.itemCart}>
                 <Link href="https://boostbarnmotorsports.com/collections/all" className={styles.navUserActionCustom}>
                   <span className={styles.cartWrapper}>
@@ -257,12 +274,11 @@ export default function Header() {
                   <span className={styles.cartText}>Shop Now</span>
                 </Link>
               </div>
-            </div>
+            </div> */}
 
-            {/* <div className={styles.headerMiddleText}>
+            <div className={styles.headerMiddleText}>
               <div className={styles.itemQuickSearch}>
-                <form action="https://boostbarnmotorsports.com/search" method="get" className={styles.searchBar} role="search">
-                  <input type="hidden" name="type" value="product" />
+                <form action="/search" method="get" className={styles.searchBar} role="search">
                   <input
                     type="text"
                     name="q"
@@ -271,6 +287,10 @@ export default function Header() {
                     aria-label="Search Site"
                     autoComplete="off"
                   />
+                  {selectedYear && <input type="hidden" name="year" value={selectedYear} />}
+                  {selectedMake && <input type="hidden" name="make" value={selectedMake} />}
+                  {selectedModel && <input type="hidden" name="model" value={selectedModel} />}
+                  {selectedSubModel && <input type="hidden" name="submodel" value={selectedSubModel} />}
                   <button type="submit" className={styles.btnSearch} title="search">
                     <svg width="20" height="20" aria-hidden="true" viewBox="0 0 1024 1024" fill="currentColor">
                       <path d="M966.070 981.101l-304.302-331.965c68.573-71.754 106.232-165.549 106.232-265.136 0-102.57-39.942-199-112.47-271.53s-168.96-112.47-271.53-112.47-199 39.942-271.53 112.47-112.47 168.96-112.47 271.53 39.942 199.002 112.47 271.53 168.96 112.47 271.53 112.47c88.362 0 172.152-29.667 240.043-84.248l304.285 331.947c5.050 5.507 11.954 8.301 18.878 8.301 6.179 0 12.378-2.226 17.293-6.728 10.421-9.555 11.126-25.749 1.571-36.171zM51.2 384c0-183.506 149.294-332.8 332.8-332.8s332.8 149.294 332.8 332.8-149.294 332.8-332.8 332.8-332.8-149.294-332.8-332.8z"/>
@@ -278,7 +298,7 @@ export default function Header() {
                   </button>
                 </form>
               </div>
-            </div> */}
+            </div>
 
             <div className={styles.userActions}>
               <div className={styles.itemAccount}>
@@ -297,7 +317,19 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-
+                <div className={styles.itemCart}>
+                <Link href="https://boostbarnmotorsports.com/cart" className={styles.navUserActionCustom}>
+                  <span className={styles.cartWrapper}>
+                    <span className={styles.countPill}>0</span>
+                    <svg width="30" height="30" viewBox="0 0 1024 1024" fill="white" aria-hidden="true" style={{ display: 'block' }}>
+                      <path d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM409.6 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"/>
+                      <path d="M768 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM768 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z"/>
+                      <path d="M898.021 228.688c-12.859-15.181-32.258-23.888-53.221-23.888h-626.846l-5.085-30.506c-6.72-40.315-43.998-71.894-84.869-71.894h-51.2c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6h51.2c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395c6.718 40.314 43.997 71.893 84.867 71.893h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zM862.331 276.694l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z"/>
+                    </svg>
+                  </span>
+                  <span className={styles.cartText}>My Cart</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -368,7 +400,7 @@ export default function Header() {
             )}
 
             {/* Vehicle Selector Dropdowns */}
-            {/* <div className={styles.vehicleSelector}>
+            <div className={styles.vehicleSelector}>
               <div className={styles.vehicleSelectorInner}>
                 <select 
                   value={selectedYear} 
@@ -439,7 +471,7 @@ export default function Header() {
                   </svg>
                 </button>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
@@ -468,9 +500,8 @@ export default function Header() {
             />
           </div>
 
-          {/* <div className={styles.scrolledSearch}>
-            <form action="https://boostbarnmotorsports.com/search" method="get" className={styles.searchBar} role="search">
-              <input type="hidden" name="type" value="product" />
+          <div className={styles.scrolledSearch}>
+            <form action="/search" method="get" className={styles.searchBar} role="search">
               <input
                 type="text"
                 name="q"
@@ -479,15 +510,19 @@ export default function Header() {
                 aria-label="Search Site"
                 autoComplete="off"
               />
+              {selectedYear && <input type="hidden" name="year" value={selectedYear} />}
+              {selectedMake && <input type="hidden" name="make" value={selectedMake} />}
+              {selectedModel && <input type="hidden" name="model" value={selectedModel} />}
+              {selectedSubModel && <input type="hidden" name="submodel" value={selectedSubModel} />}
               <button type="submit" className={styles.btnSearch} title="search">
                 <svg width="20" height="20" aria-hidden="true" viewBox="0 0 1024 1024" fill="currentColor">
                   <path d="M966.070 981.101l-304.302-331.965c68.573-71.754 106.232-165.549 106.232-265.136 0-102.57-39.942-199-112.47-271.53s-168.96-112.47-271.53-112.47-199 39.942-271.53 112.47-112.47 168.96-112.47 271.53 39.942 199.002 112.47 271.53 168.96 112.47 271.53 112.47c88.362 0 172.152-29.667 240.043-84.248l304.285 331.947c5.050 5.507 11.954 8.301 18.878 8.301 6.179 0 12.378-2.226 17.293-6.728 10.421-9.555 11.126-25.749 1.571-36.171zM51.2 384c0-183.506 149.294-332.8 332.8-332.8s332.8 149.294 332.8 332.8-149.294 332.8-332.8 332.8-332.8-149.294-332.8-332.8z"/>
                 </svg>
               </button>
             </form>
-          </div> */}
+          </div>
 
-            <div className={styles.headerMiddleText}>
+            {/* <div className={styles.headerMiddleText}>
               <div className={styles.itemCart}>
                 <Link href="https://boostbarnmotorsports.com/collections/all" className={styles.navUserActionCustom}>
                   <span className={styles.cartWrapper}>
@@ -500,7 +535,7 @@ export default function Header() {
                   <span className={styles.cartText}>Shop Now</span>
                 </Link>
               </div>
-            </div>
+            </div> */}
 
           <div className={styles.scrolledActions}>
             <button className={styles.mobileSearchButton} onClick={() => setMobileSearchOpen(!mobileSearchOpen)} aria-label="Toggle search">
@@ -532,7 +567,7 @@ export default function Header() {
               </div>
             </div>
 
-            {/* <div className={`${styles.itemCart} ${styles.desktopOnly}`}>
+            <div className={`${styles.itemCart} ${styles.desktopOnly}`}>
               <Link href="https://boostbarnmotorsports.com/cart" className={styles.navUserActionCustom}>
                 <span className={styles.cartWrapper}>
                   <span className={styles.countPill}>0</span>
@@ -544,13 +579,12 @@ export default function Header() {
                 </span>
                 <span className={styles.navUserTextWrapper}>My Cart</span>
               </Link>
-            </div> */}
+            </div>
           </div>
         </div>
 
         <div className={`${styles.mobileSearchBar} ${mobileSearchOpen ? styles.active : ''}`}>
-          <form action="https://boostbarnmotorsports.com/search" method="get" className={styles.searchBar} role="search">
-            <input type="hidden" name="type" value="product" />
+          <form action="/search" method="get" className={styles.searchBar} role="search">
             <input
               type="text"
               name="q"
@@ -559,6 +593,10 @@ export default function Header() {
               aria-label="Search Site"
               autoComplete="off"
             />
+            {selectedYear && <input type="hidden" name="year" value={selectedYear} />}
+            {selectedMake && <input type="hidden" name="make" value={selectedMake} />}
+            {selectedModel && <input type="hidden" name="model" value={selectedModel} />}
+            {selectedSubModel && <input type="hidden" name="submodel" value={selectedSubModel} />}
             <button type="submit" className={styles.btnSearch} title="search">
               <svg width="20" height="20" aria-hidden="true" viewBox="0 0 1024 1024" fill="currentColor">
                 <path d="M966.070 981.101l-304.302-331.965c68.573-71.754 106.232-165.549 106.232-265.136 0-102.57-39.942-199-112.47-271.53s-168.96-112.47-271.53-112.47-199 39.942-271.53 112.47-112.47 168.96-112.47 271.53 39.942 199.002 112.47 271.53 168.96 112.47 271.53 112.47c88.362 0 172.152-29.667 240.043-84.248l304.285 331.947c5.050 5.507 11.954 8.301 18.878 8.301 6.179 0 12.378-2.226 17.293-6.728 10.421-9.555 11.126-25.749 1.571-36.171zM51.2 384c0-183.506 149.294-332.8 332.8-332.8s332.8 149.294 332.8 332.8-149.294 332.8-332.8 332.8-332.8-149.294-332.8-332.8z"/>
