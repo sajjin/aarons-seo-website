@@ -12,13 +12,13 @@ frontend:
     build:
       commands:
         - npm run build
+        - cp products.db .next/server/
   artifacts:
     baseDirectory: .next
     files:
       - '**/*'
     exclude:
       - products.db
-      - '*.db'
       - node_modules/**/*
       - .git/**/*
       - static/media/**/*
