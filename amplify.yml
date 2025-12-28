@@ -12,11 +12,8 @@ frontend:
     build:
       commands:
         - npm run build
-        - rm -f .next/standalone/products.db
-        - echo "=== Checking for large files in .next ==="
-        - du -h .next | sort -h | tail -20
-        - echo "=== Total size of .next ==="
-        - du -sh .next
+        - rm -rf .next/standalone
+        - ls -lah .next | head -20
   artifacts:
     baseDirectory: .next
     files:
