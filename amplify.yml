@@ -16,6 +16,8 @@ frontend:
     baseDirectory: .next
     files:
       - '**/*'
+    exclude:
+      - 'app/data/products.db'
   cache:
     paths:
       - .npm/**
