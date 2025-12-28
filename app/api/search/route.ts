@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import Database from 'better-sqlite3';
 import path from 'path';
 
+// Ensure this route runs on Node.js runtime (not Edge),
+// since better-sqlite3 requires native Node APIs.
+export const runtime = 'nodejs';
+
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
