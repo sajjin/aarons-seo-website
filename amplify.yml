@@ -12,13 +12,17 @@ frontend:
     build:
       commands:
         - npm run build
-        - cp products.db .next/server/
+        - echo "Downloading products.db from S3"
+        - aws s3 cp s3://your-bucket-name/products.db .next/server/
   artifacts:
     baseDirectory: .next
     files:
       - '**/*'
     exclude:
       - products.db
+      - '*.db'
+      - server/products.db
+      - server/*.db
       - node_modules/**/*
       - .git/**/*
       - static/media/**/*
