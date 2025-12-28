@@ -12,8 +12,6 @@ frontend:
     build:
       commands:
         - npm run build
-        - rm -rf .next/standalone
-        - ls -lah .next | head -20
   artifacts:
     baseDirectory: .next
     files:
@@ -23,7 +21,8 @@ frontend:
       - '*.db'
       - node_modules/**/*
       - .git/**/*
+      - static/media/**/*
+      - cache/**/*
   cache:
     paths:
-      - .npm/**
-      - node_modules/**
+      - .npm/**/*
