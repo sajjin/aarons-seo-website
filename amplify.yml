@@ -12,12 +12,12 @@ frontend:
     build:
       commands:
         - npm run build
+        - find .next -name "products.db" -type f -delete
+        - rm -f .next/app/data/products.db products.db.bak
   artifacts:
     baseDirectory: .next
     files:
       - '**/*'
-    exclude:
-      - 'products.db'
   cache:
     paths:
       - .npm/**
