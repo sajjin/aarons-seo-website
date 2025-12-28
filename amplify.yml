@@ -5,7 +5,7 @@ frontend:
       commands:
         - npm ci --cache .npm --prefer-offline
         - echo "Installing Git LFS and checking out large files"
-        - yum install -y git-lfs
+        - sudo yum install -y git-lfs
         - git lfs install
         - git lfs fetch --all
         - git lfs checkout
