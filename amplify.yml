@@ -12,9 +12,7 @@ frontend:
     build:
       commands:
         - npm run build
-        - ls -lah .next | grep -i products || echo "No products.db in .next root"
-        - find .next -name "*.db" -type f
-        - find .next -type f -size +100M
+        - rm -f .next/standalone/products.db
   artifacts:
     baseDirectory: .next
     files:
