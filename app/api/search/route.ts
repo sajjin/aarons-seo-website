@@ -32,7 +32,7 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ results: [], total: 0, page, limit, totalPages: 0 });
     }
 
-    const dbPath = path.join(process.cwd(), 'app', 'data', 'products.db');
+    const dbPath = path.join(process.cwd(), 'products.db');
 
     // Detect Git LFS pointer files to provide a clearer error message in dev
     try {
