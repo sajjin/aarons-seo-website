@@ -1,10 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Database from 'better-sqlite3';
 import path from 'path';
+import fs from 'fs';
 
 // Ensure this route runs on Node.js runtime (not Edge),
 // since better-sqlite3 requires native Node APIs.
 export const runtime = 'nodejs';
+// Mark route as dynamic to avoid static rendering during build
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export async function GET(request: NextRequest) {
   try {
@@ -29,6 +33,24 @@ export async function GET(request: NextRequest) {
     }
 
     const dbPath = path.join(process.cwd(), 'app', 'data', 'products.db');
+
+    // Detect Git LFS pointer files to provide a clearer error message in dev
+    try {
+      const head = fs.readFileSync(dbPath, { encoding: 'utf8' }).slice(0, 64);
+      if (head.startsWith('version https://git-lfs.github.com/spec/v1')) {
+        return NextResponse.json(
+          {
+            error: 'Products database not downloaded',
+            details:
+              'Git LFS pointer detected. Run: git lfs install && git lfs fetch --all && git lfs checkout',
+          },
+          { status: 500 }
+        );
+      }
+    } catch {
+      // If read fails, proceed; better-sqlite3 will throw if file is invalid
+    }
+
     const db = new Database(dbPath, { readonly: true });
 
     // Build WHERE clause fragments and params
@@ -142,8 +164,19 @@ export async function GET(request: NextRequest) {
 
   } catch (error) {
     console.error('Search error:', error);
+    const msg = error instanceof Error ? error.message : 'Unknown error';
+    const isNotDb = typeof error === 'object' && error && (error as any).code === 'SQLITE_NOTADB';
     return NextResponse.json(
-      { error: 'Failed to search products', details: error instanceof Error ? error.message : 'Unknown error' },
+      {
+        error: 'Failed to search products',
+        details: msg,
+        ...(isNotDb
+          ? {
+              hint:
+                'Products DB is not a SQLite file. If using Git LFS, run: git lfs install && git lfs fetch --all && git lfs checkout',
+            }
+          : {}),
+      },
       { status: 500 }
     );
   }
