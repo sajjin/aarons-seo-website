@@ -18,6 +18,11 @@ frontend:
     baseDirectory: .next
     files:
       - '**/*'
+    exclude:
+      - products.db
+      - '*.db'
+      - node_modules/**/*
+      - .git/**/*
   cache:
     paths:
       - .npm/**
