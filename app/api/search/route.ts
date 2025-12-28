@@ -34,23 +34,6 @@ export async function GET(request: NextRequest) {
 
     const dbPath = path.join(process.cwd(), 'products.db');
 
-    // Detect Git LFS pointer files to provide a clearer error message in dev
-    try {
-      const head = fs.readFileSync(dbPath, { encoding: 'utf8' }).slice(0, 64);
-      if (head.startsWith('version https://git-lfs.github.com/spec/v1')) {
-        return NextResponse.json(
-          {
-            error: 'Products database not downloaded',
-            details:
-              'Git LFS pointer detected. Run: git lfs install && git lfs fetch --all && git lfs checkout',
-          },
-          { status: 500 }
-        );
-      }
-    } catch {
-      // If read fails, proceed; better-sqlite3 will throw if file is invalid
-    }
-
     const db = new Database(dbPath, { readonly: true });
 
     // Build WHERE clause fragments and params

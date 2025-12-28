@@ -1,13 +1,14 @@
 import styles from './page.module.css';
-import Header from '../../components/Header/Header';
-import HeroSection from '../../components/HeroSection/HeroSection';
-import BrandsSection from '../../components/BrandSection/BrandsSection';
-import ProjectsSection from '../../components/ProjectsSection/ProjectsSection';
-import ProductSection from '../../components/ProductSection/ProductSection';
-import AnnouncementBanner from '../../components/AnnouncementBanner/AnnouncementBanner';
-import BackToTop from '../../components/BackToTop/BackToTop';
-import Footer from '../../components/Footer/Footer';
+import Header from '@/app/components/Header/Header';
+import HeroSection from '@/app/components/HeroSection/HeroSection';
+import BrandsSection from '@/app/components/BrandSection/BrandsSection';
+import ProjectsSection from '@/app/components/ProjectsSection/ProjectsSection';
+import ProductSection from '@/app/components/ProductSection/ProductSection';
+import AnnouncementBanner from '@/app/components/AnnouncementBanner/AnnouncementBanner';
+import BackToTop from '@/app/components/BackToTop/BackToTop';
+import Footer from '@/app/components/Footer/Footer';
 import { SUSPENSION_ITEMS, SUSPENSION_PRODUCTS } from '../../data/site';
+import VehicleSelector from '@/app/components/VehicleSelector/VehicleSelector';
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <AnnouncementBanner />
       <Header />
       <main className={styles.mainContent}>
+        <VehicleSelector />
         <HeroSection />
         <BrandsSection />
         <ProjectsSection />

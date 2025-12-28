@@ -5,7 +5,6 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './search.module.css';
-import Header from '../components/Header/Header';
 
 interface SearchResult {
   handle: string;
@@ -104,7 +103,6 @@ export default function SearchClient() {
 
   return (
     <>
-      <Header />
       <main className={styles.mainContent}>
         <div className={styles.searchPage}>
           <div className={styles.container}>
