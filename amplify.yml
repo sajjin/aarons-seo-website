@@ -13,7 +13,7 @@ frontend:
       commands:
         - npm run build
         - echo "Downloading products.db from S3"
-        - aws s3 cp s3://your-bucket-name/products.db .next/server/
+        - aws s3 cp s3://aarons-seo-website--usw2-az1--x-s3/products.db .next/server/
   artifacts:
     baseDirectory: .next
     files:
