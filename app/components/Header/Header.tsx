@@ -139,7 +139,7 @@ export default function Header() {
                 <p className={styles.navUserCenterItem}>Your Canadian Performance Parts Supplier!</p>
               </div>
               <div className={styles.navUserRight}>
-                <Link href="https://boost-barn.myshopify.com/pages/contact" className={styles.navUserAction}>
+                <Link href="/pages/contact-us" className={styles.navUserAction}>
                   Contact Us
                 </Link>
               </div>

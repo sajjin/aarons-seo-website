@@ -1,0 +1,260 @@
+[
+  {
+    "id": "engine-building",
+    "title": "Engine Building",
+    "subtitle": "Custom Engine Assembly & Modifications",
+    "heroImage": "/assets/img/services/engine-building-hero.webp",
+    "description": "From stock to 800+ HP, we build and modify engines for performance and reliability.",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Custom Engine Building",
+        "text": "Our expert engine builders specialize in creating high-performance powerplants tailored to your goals. Whether you're looking for daily driver reliability or maximum track performance, we have the expertise to deliver. We handle everything from block preparation and machine work to final assembly and dyno testing.",
+        "image": "/assets/img/services/engine-overview.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "services",
+        "heading": "Services Offered",
+        "text": "We provide comprehensive engine building services including: block preparation, stroker kits, piston and rod selection, camshaft tuning, turbo upgrades, fuel system optimization, and complete dyno testing. Each build is customized to your vehicle's needs and performance targets.",
+        "image": "/assets/img/services/engine-services.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "expertise",
+        "heading": "Our Expertise",
+        "text": "With years of experience building engines that exceed 800+ HP, we understand the intricacies of forced induction, internal modifications, and durability. We work with quality components from trusted manufacturers and ensure every build is bulletproof and reliable.",
+        "image": "/assets/img/services/engine-expertise.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "specialization": "High-Performance Engines",
+      "maxPower": "800+ HP",
+      "turboExperience": "All Sizes",
+      "certifications": "Advanced ASE"
+    },
+    "features": [
+      "Turbo upgrades",
+      "Stroker kits",
+      "Custom cam tuning",
+      "Fuel system optimization",
+      "Dyno testing"
+    ]
+  },
+  {
+    "id": "turbo-upgrades",
+    "title": "Turbo Upgrades",
+    "subtitle": "Forced Induction Specialists",
+    "heroImage": "/assets/img/services/turbo-upgrades-hero.webp",
+    "description": "Expert turbocharger selection, installation, and tuning for maximum boost.",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Turbocharger Solutions",
+        "text": "We specialize in selecting and installing turbochargers that match your vehicle's power goals and driving style. From Garrett to BorgWarner, we work with leading manufacturers to find the perfect fit for your build.",
+        "image": "/assets/img/services/turbo-overview.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "installation",
+        "heading": "Expert Installation",
+        "text": "Our installation process includes manifold upgrades, intercooler setup, piping optimization, and boost control tuning. We ensure every component works together seamlessly for maximum efficiency and reliability.",
+        "image": "/assets/img/services/turbo-installation.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "tuning",
+        "heading": "Boost Tuning & Dyno",
+        "text": "After installation, we perform complete dyno testing and ECU tuning to optimize boost pressure, fuel delivery, and timing. This ensures your turbo system delivers maximum power safely and reliably.",
+        "image": "/assets/img/services/turbo-tuning.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "specialization": "Turbochargers",
+      "brands": "Garrett, BorgWarner, Precision",
+      "maxBoost": "40+ PSI",
+      "experience": "1000+ Builds"
+    },
+    "features": [
+      "Turbo selection consultation",
+      "Professional installation",
+      "Intercooler systems",
+      "Boost control setup",
+      "Dyno optimization"
+    ]
+  },
+  {
+    "id": "suspension-tuning",
+    "title": "Suspension Tuning",
+    "subtitle": "Handling & Performance Setup",
+    "heroImage": "/assets/img/services/suspension-hero.webp",
+    "description": "Complete suspension upgrades and tuning for track and street performance.",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Suspension Excellence",
+        "text": "A properly tuned suspension is critical for both daily driving comfort and track performance. We design and install complete suspension systems that balance responsiveness, comfort, and durability.",
+        "image": "/assets/img/services/suspension-overview.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "upgrades",
+        "heading": "Suspension Upgrades",
+        "text": "We offer coilover installations, anti-roll bar upgrades, bracing systems, and adjustable suspension components. Each setup is tailored to your vehicle's weight, power, and intended use.",
+        "image": "/assets/img/services/suspension-upgrades.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "alignment",
+        "heading": "Alignment & Setup",
+        "text": "Proper alignment is crucial for handling and tire longevity. We perform detailed corner balancing and alignment setup using precision equipment to ensure optimal performance.",
+        "image": "/assets/img/services/suspension-alignment.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "specialization": "Suspension Systems",
+      "brands": "Bilstein, Tein, KW, Fortune Auto",
+      "trackReady": "Yes",
+      "experience": "Track & Street"
+    },
+    "features": [
+      "Coilover installation",
+      "Anti-roll bars",
+      "Bracing systems",
+      "Corner balancing",
+      "Professional alignment"
+    ]
+  },
+  {
+    "id": "drivetrain-work",
+    "title": "Drivetrain Services",
+    "subtitle": "Transmissions & Differentials",
+    "heroImage": "/assets/img/services/drivetrain-hero.webp",
+    "description": "Professional transmission, differential, and driveshaft services for all power levels.",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Drivetrain Expertise",
+        "text": "We understand the challenges of delivering extreme power to the pavement. Our drivetrain services ensure your transmission and differential can handle whatever horsepower you produce.",
+        "image": "/assets/img/services/drivetrain-overview.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "services",
+        "heading": "Our Services",
+        "text": "We provide transmission builds, differential upgrades, custom driveshaft fabrication, axle specification, and clutch systems. Whether stock reliability or 800+ HP capability, we have solutions.",
+        "image": "/assets/img/services/drivetrain-services.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "reliability",
+        "heading": "Reliability Engineering",
+        "text": "With experience building bullet-proof drivetrains that handle extreme loads, we know how to select components and tune systems for maximum durability and minimal wear.",
+        "image": "/assets/img/services/drivetrain-reliability.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "specialization": "Transmissions & Differentials",
+      "maxPower": "800+ HP",
+      "platforms": "Subaru, General Motors",
+      "experience": "Drag & Street"
+    },
+    "features": [
+      "Transmission builds",
+      "Differential upgrades",
+      "Custom driveshafts",
+      "Axle selection",
+      "Clutch systems"
+    ]
+  },
+  {
+    "id": "ecu-tuning",
+    "title": "ECU Tuning & Mapping",
+    "subtitle": "Custom Engine Control Programming",
+    "heroImage": "/assets/img/services/ecu-tuning-hero.webp",
+    "description": "Professional ECU tuning and custom mapping for optimal engine performance.",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Custom ECU Tuning",
+        "text": "Modern engines are controlled by sophisticated computers. We specialize in custom ECU tuning that maximizes your engine's potential while maintaining reliability and safety.",
+        "image": "/assets/img/services/ecu-overview.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "services",
+        "heading": "Tuning Services",
+        "text": "We offer fuel mapping, ignition timing optimization, boost control programming, rev limiters, anti-lag systems, and custom datalogs. Every tune is dyno-tested and verified for reliability.",
+        "image": "/assets/img/services/ecu-services.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "precision",
+        "heading": "Precision Engineering",
+        "text": "Using professional tuning software and dyno equipment, we dial in every aspect of your engine's operation. The result is maximum power, improved efficiency, and bulletproof reliability.",
+        "image": "/assets/img/services/ecu-precision.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "specialization": "ECU Mapping",
+      "platforms": "OpenSource, Subaru OEM",
+      "dynoPower": "Real-Time Optimization",
+      "datalogs": "Custom Analysis"
+    },
+    "features": [
+      "Fuel mapping",
+      "Ignition tuning",
+      "Boost control",
+      "Anti-lag systems",
+      "Real-time logging"
+    ]
+  },
+  {
+    "id": "fabrication",
+    "title": "Custom Fabrication",
+    "subtitle": "Steel & Aluminum Welding",
+    "heroImage": "/assets/img/services/fabrication-hero.webp",
+    "description": "Expert custom fabrication services for brackets, manifolds, cages, and more.",
+    "sections": [
+      {
+        "id": "overview",
+        "heading": "Fabrication Services",
+        "text": "From custom intake manifolds to roll cages, our fabrication team can build almost anything. We combine engineering knowledge with welding expertise to create strong, functional components.",
+        "image": "/assets/img/services/fabrication-overview.webp",
+        "layout": "image-left"
+      },
+      {
+        "id": "capabilities",
+        "heading": "Our Capabilities",
+        "text": "We specialize in TIG and MIG welding, CNC machining, custom bracket fabrication, manifold work, exhaust design, and structural reinforcement. All work is performed to the highest standards.",
+        "image": "/assets/img/services/fabrication-capabilities.webp",
+        "layout": "image-right"
+      },
+      {
+        "id": "custom",
+        "heading": "Custom Design & Build",
+        "text": "Whether you have a specific design in mind or need engineering consultation, we can help. Our team can fabricate one-off parts or production runs with precision and quality.",
+        "image": "/assets/img/services/fabrication-custom.webp",
+        "layout": "image-left"
+      }
+    ],
+    "specs": {
+      "specialization": "Custom Fabrication",
+      "welding": "TIG, MIG, Stick",
+      "materials": "Steel, Aluminum, Stainless",
+      "equipment": "CNC, Press, Drills"
+    },
+    "features": [
+      "Custom manifolds",
+      "Roll cage fabrication",
+      "Exhaust design",
+      "Bracket fabrication",
+      "Structural reinforcement"
+    ]
+  }
+]

@@ -3,6 +3,7 @@ import Header from '@/app/components/Header/Header';
 import HeroSection from '@/app/components/HeroSection/HeroSection';
 import BrandsSection from '@/app/components/BrandSection/BrandsSection';
 import ProjectsSection from '@/app/components/ProjectsSection/ProjectsSection';
+import ServicesSection from '@/app/components/ServicesSection/ServicesSection';
 import ProductSection from '@/app/components/ProductSection/ProductSection';
 import AnnouncementBanner from '@/app/components/AnnouncementBanner/AnnouncementBanner';
 import BackToTop from '@/app/components/BackToTop/BackToTop';
@@ -20,6 +21,8 @@ export default function Home() {
         <VehicleSelector />
         <HeroSection />
         <BrandsSection />
+        <ServicesSection heading="Our Services" />
+
         <ProjectsSection />
         <ProductSection
           title="Merch"

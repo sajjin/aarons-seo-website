@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-ses": "^3.550.0",
     "@types/better-sqlite3": "^7.6.13",
     "better-sqlite3": "^12.5.0",
     "dotenv": "^17.2.3",

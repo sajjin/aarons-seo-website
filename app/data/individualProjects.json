@@ -44,30 +44,30 @@
       {
         "id": "overview",
         "heading": "Build Philosophy",
-        "text": "This 2007 STI was built with one goal in mind: dominate on the track. Every modification serves a purpose, from the aerodynamics to the engine internals. This is a no-compromise performance build.",
-        "image": "/assets/img/projects/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
+        "text": "This 2007 STI was built with one clear objective: to dominate every car show it attends. Producing over 500 AWHP, it’s far from just a visual statement. A Garrett turbocharger forces air through a custom V-mount intercooler and into the engine via a Process West intake manifold, delivering both power and reliability. The aggressive widebody paired with its latest wrap gives the car a fighter-jet–inspired presence, looking absolutely unreal when fully aired out and slammed to the ground.",
+        "image": "/assets/img/projects/gurjs-07-sti/received_223796085299486_large.webp",
         "layout": "image-right"
       },
       {
         "id": "engine",
         "heading": "Engine & Drivetrain",
-        "text": "The heart of this STI features a fully built EJ257 with upgraded pistons, rods, and head studs. A larger turbocharger and supporting mods push this platform well beyond factory specs while maintaining reliability.",
-        "image": "/assets/img/projects/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
+        "text": "At the core of this STI is a fully built, in-house EJ257, featuring upgraded pistons and rods secured with ARP hardware. Power is delivered by a GTX3582R turbocharger, pushing impressive numbers through the stock 6-speed transmission while maintaining long-term reliability. This setup strikes the perfect balance between performance and durability.",
+        "image": "/assets/img/projects/gurjs-07-sti/received_224530011883600_large.webp",
         "layout": "image-left"
       },
       {
         "id": "track",
-        "heading": "Track Performance",
-        "text": "With upgraded brakes, track-focused suspension geometry, and lightweight wheels wrapped in sticky tires, this STI is equally at home on the street or setting lap times at the track.",
-        "image": "/assets/img/WhatsApp_Image_2022-11-08_at_1.32.02_PM_720x_f31af18f-c776-4052-9695-ff0247977984.webp",
+        "heading": "Interior",
+        "text": "This STI impresses just as much inside as it does outside. A Cusco roll cage anchors a fully custom interior, from bespoke carpeting to a one-off trunk setup. The interior houses the air ride and sound systems, all brought together with tasteful interior lighting that highlights the craftsmanship throughout.",
+        "image": "/assets/img/projects/gurjs-07-sti/Gurj_Roller_770x500.webp",
         "layout": "image-right"
       }
     ],
     "specs": {
       "engine": "Built EJ257",
-      "horsepower": "450+ HP",
-      "drivetrain": "AWD",
-      "brakes": "6-Piston Front / 4-Piston Rear"
+      "horsepower": "500+ HP",
+      "Drivetrain": "AWD",
+      "Suspension": "Air ride"
     },
     "link": "https://boostbarnmotorsports.com/blogs/news/gurjs-2007-sti"
   },
@@ -111,27 +111,27 @@
     "id": "2004-drift-car",
     "title": "Aaron's 2004 Impreza Drift Car",
     "subtitle": "Purpose-Built Drift Machine",
-    "heroImage": "/assets/img/Drift_Car6.webp",
+    "heroImage": "/assets/img/projects/aarons-drift-car/Drift_Car6.webp",
     "sections": [
       {
         "id": "overview",
         "heading": "Built to Slide",
-        "text": "This 2004 Impreza has been transformed into a dedicated drift weapon. Every component has been chosen and installed with sideways action in mind, creating a car that's as fun to drive as it is to watch.",
-        "image": "/assets/img/Drift_Car6.webp",
+        "text": "This 2004 Impreza has been transformed into a dedicated drift weapon. Every component has been chosen and installed with sideways action in mind, creating a car that's as fun to drive as it is to watch. All this, without breaking the bank.",
+        "image": "/assets/img/projects/aarons-drift-car/DSC_9258.jpg",
         "layout": "image-right"
       },
       {
         "id": "setup",
         "heading": "Drift Setup",
-        "text": "Featuring a welded differential, angle kit, and hydraulic handbrake, this Impreza is equipped with all the essentials for serious drift work. The suspension is dialed in for maximum angle and control.",
-        "image": "/assets/img/Drift_Car6.webp",
+        "text": "Featuring a welded center and rear differential, custom angle kit, and hydraulic handbrake, this Impreza is equipped with all the essentials for serious drift work. The suspension is dialed in for maximum angle and control.",
+        "image": "/assets/img/projects/aarons-drift-car/Ice Attack-185.jpg",
         "layout": "image-left"
       },
       {
         "id": "power",
         "heading": "Power Delivery",
-        "text": "The turbocharged engine has been tuned for responsive power delivery that's perfect for initiating and holding drifts. Upgraded cooling ensures consistent performance during extended sessions.",
-        "image": "/assets/img/Drift_Car6.webp",
+        "text": "The engine has been tuned for responsive power delivery that's perfect for initiating and holding drifts. This is achieved by using a Version 8 JDM engine swap with a factory VF37 twin scroll turbo kit. E85 fuel and upgraded cooling ensures consistent performance during extended sessions.",
+        "image": "/assets/img/projects/aarons-drift-car/image00017.jpeg",
         "layout": "image-right"
       }
     ],
@@ -151,31 +151,31 @@
     "sections": [
       {
         "id": "overview",
-        "heading": "Next Generation Build",
-        "text": "Chris's 2013 STI represents the evolution of Subaru performance. With modern technology and classic STI heritage, this build showcases what's possible with the newer generation platform.",
+        "heading": "Ultimate Street Car",
+        "text": "The goal of this build was to create the ultimate street car—one that prioritizes daily drivability without sacrificing performance. The engine bay features a stock-location Forced Performance Blue turbo plumbed with custom pie-cut stainless steel intercooler piping, blending form and function seamlessly. Factory air conditioning and all creature comforts are retained, proving that high performance doesn’t have to come at the cost of convenience.",
         "image": "/assets/img/Chris_5.webp",
         "layout": "image-left"
       },
       {
         "id": "upgrades",
-        "heading": "Comprehensive Upgrades",
-        "text": "This STI features a complete suite of bolt-on and internal modifications. From the intake to the exhaust, every system has been optimized for maximum performance and efficiency.",
+        "heading": "Under the Cover",
+        "text": "At first glance, the car appears relatively stock, aside from some refined piping and bolt-on upgrades. Beneath the surface, however, lies a full suite of motorsports-grade equipment. A Nitrous Express system is fully integrated and controlled through a Link standalone ECU, with operation managed via the Link CAN keypad. Arming, purging, boost adjustments, and on-the-fly launch RPM changes are all handled effortlessly from the keypad and Razor PDM, putting total control at the driver’s fingertips.",
         "image": "/assets/img/Chris_5.webp",
         "layout": "image-right"
       },
       {
         "id": "daily",
         "heading": "Daily Driven Performance",
-        "text": "Despite the serious modifications, this STI remains a practical daily driver. Comfort hasn't been sacrificed, proving that performance and practicality can coexist.",
+        "text": "Despite its serious modifications, this STI remains a true daily driver. Comfort and usability have been carefully preserved, proving that performance and practicality can coexist. One-of-one custom wheels provide flawless fitment on the stock body, allowing for a low ride height without any rubbing, while Fortune Auto coilovers deliver a smooth, controlled ride. Meticulous attention to detail ensures this car feels just as at home on the street as it does on the showroom floor.",
         "image": "/assets/img/Chris_5.webp",
         "layout": "image-left"
       }
     ],
     "specs": {
       "engine": "EJ257 Modified",
-      "horsepower": "400+ HP",
-      "drivetrain": "AWD",
-      "transmission": "6-Speed Manual"
+      "horsepower": "450+ HP",
+      "ecu Link Fury": "CAN Keypad and Razor PDM",
+      "Induction Type": "Turbo, and Nitrous"
     },
     "link": "https://boost-barn.myshopify.com/blogs/news/chris-2013-sti"
   },
