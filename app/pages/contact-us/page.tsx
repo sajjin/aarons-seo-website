@@ -124,7 +124,7 @@ export default function ContactPage() {
                         </form>
                         {status === 'success' && (
                             <p className={`${styles.statusMessage} ${styles.successMessage}`}>
-                                Message sent successfully! We'll get back to you soon.
+                                Message sent successfully! We&apos;ll get back to you soon.
                             </p>
                         )}
                         {status === 'error' && (
