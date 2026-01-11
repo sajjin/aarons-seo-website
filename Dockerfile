@@ -12,5 +12,6 @@ RUN npm ci --only=production
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 COPY products.db ./products.db
+COPY .env .env
 EXPOSE 3000
 CMD ["npm", "start"]
